@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9B73B05C84ACC37D43E97A3FF90F71D9" Timestamp="1D3689D8DD7A40E" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="269B257847626B0F0E5A3ED3D3CAABB9" Timestamp="1D3689FEDCAA4DF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.2.0.56252" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="5.2.0.56252" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
@@ -37,7 +37,7 @@
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="45" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]46" Left="[float]660" MinHeight="[float]24" TabIndex="[int]0" Top="[float]324" Value="{DataItemBinding Id=44}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="46" LabelOwner="[UIModel]45" Left="[float]660" Text="[string]Result3" Top="[float]304" Width="[float]57" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="46" LabelOwner="[UIModel]45" Left="[float]660" Text="[string]Result2" Top="[float]304" Width="[float]57" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="320 305 40 15" DataItem="15" Id="16" Label="19" xmlns="http://www.ni.com/MocCommon">
@@ -66,20 +66,20 @@
 			<Wire Id="30" Joints="N(27:Out)|(375,375) h(55) v(-10) N(20:c1t0v)|(435,365)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="31" Joints="N(28:Out)|(480,445) h(83) v(-30) N(21:c1t0v)|(570,415)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="32" Joints="N(20:o)|(465,360) h(100) v(40) N(21:c0t0v)|(570,400)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="33" Joints="N(21:o)|(600,410) h(5) v(-25) h(35) B(3) h(60) v(65) N(23:Value)|(708,450) B(3) v(150) N(48:x)|(655,535)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="33" Joints="N(21:o)|(600,410) h(5) v(-25) h(35) B(3) h(60) v(65) N(23:Value)|(708,450) B(3) v(150) N(49:c0t0v)|(655,535)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="575 555 40 15" DataType="Int32" Id="36" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>5</p.Data>
 				<NumericBehavior Interpretation="Numeric" ValueFormatter="LV:0" />
 			</Literal>
-			<Wire Id="37" Joints="N(36:Out)|(615,560) h(33) v(-10) N(48:y)|(655,550)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="37" Joints="N(36:Out)|(615,560) h(33) v(-10) N(49:c1t0v)|(655,550)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="710 540 40 15" DataItem="44" Id="42" Label="43" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="42" Bounds="755 540 41 14" Id="43" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Result3</p.Text>
+				<p.Text>Result2</p.Text>
 			</NodeLabel>
-			<Wire Id="47" Joints="N(48:x-y)|(685,545) N(42:Value)|(713,545)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Subtract Bounds="655 530 30 30" Id="48" />
+			<Wire Id="47" Joints="N(49:o)|(685,545) N(42:Value)|(713,545)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Add Bounds="655 530 30 30" Id="49" Terminals="o=47, c0t0v=33, c1t0v=37" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
@@ -94,7 +94,7 @@
 		<DataItem AdaptToDiagramType="True" DataType="Double" Id="22" Name="Result1" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Double" Id="44" Name="Result3" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" DataType="Double" Id="44" Name="Result2" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0x0</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
