@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="CECE76A18697DFA9A767D7E53CC057CF" Timestamp="1D36895776AB352" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DD2139BAB33287910EC5C4DE92B25592" Timestamp="1D3689B321437CE" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="5.2.0.56252" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="5.2.0.56252" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
@@ -63,7 +63,7 @@
 			<Wire Id="30" Joints="N(27:Out)|(375,375) h(55) v(-10) N(20:c1t0v)|(435,365)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="31" Joints="N(28:Out)|(480,445) h(83) v(-30) N(21:c1t0v)|(570,415)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="32" Joints="N(20:o)|(465,360) h(100) v(40) N(21:c0t0v)|(570,400)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="33" Joints="N(21:o)|(600,410) h(100) v(40) N(23:Value)|(708,450)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="33" Joints="N(21:o)|(600,410) h(5) v(-25) h(95) v(65) N(23:Value)|(708,450)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
 			<PanelExecutionWindow Id="14" />
